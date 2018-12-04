@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>Index</title>
+		<style>
+			body { margin: 0; background-color: beige}
+			canvas { width: 100%; height: 100% }
+		</style>
+ 		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<script src="libraries/p5.js"></script>
+		<script src="libraries/p5.dom.js"></script>
+		<script src="libraries/p5.sound.js"></script>
+		<script src="libraries/three.js"></script>
+		<script src="libraries/WebGL.js"></script>
+		<script src="libraries/dat.gui.min.js"></script>
+		<script src="libraries/OBJLoader.js"></script>
+		<script src="libraries/tween.min.js"></script>
+		<script src="libraries/FirstPersonControls.js"></script>
+		<script src="libraries/OrbitControls.js"></script>
+		<canvas class = "blkCanvas" id = "blkCanvas"></canvas>
+		<script src="libraries/MTLLoader.js"></script>
+
+
+
+		<script src="Sky.js"></script>
+		<!-- <script src="FirstPersonControls.js"></script> -->
+
+		<canvas id="canvas" style = "display:none;"></canvas>
+		<img id="scream" width="4096" height="4096" src="assets/nnnpp3.jpg" alt="The Scream" style="display: none">
+
+		<div class="opening-texts">
+			<h3 id="1">When I think of the dream, I see a lantern. </h2>
+			<h3 id="2">Down, down, down into the darkness of the dream </h2>
+			<h3 id="3">Gently it goes - the overlarge, the ample, the high.</h2>
+		</div>
+
+
+		<div class="bottom" id="bottom-button">
+			<div id="button-start" onclick="makeWish()" class="hvr-buzz">
+				<h2>  Make A Wish  </h2>
+			</div>
+			<!-- <div id="button-wish" onclick="seeWish()" class="hvr-underline-from-left">
+				<h2> See Others' Wish</h2>
+			</div> -->
+		</div>
+
+		<div id="container"></div>
+		<script src="sketch.js"></script>
+		<script src="conbine.js"></script>
+	</body>
+</html>
